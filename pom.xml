@@ -92,10 +92,10 @@
 							<testFailureIgnore>false</testFailureIgnore>
 							<reportsDirectory>${project.build.directory}/surefire-reports/arch-tests</reportsDirectory>
 							<includes>
-								<include>**/com/worldpay/gpp/alipay/architecture/*.java</include>
+								<include>**/com/selflearning/architecture/*.java</include>
 							</includes>
 							<excludes>
-								<exclude>**/com/worldpay/gpp/alipay/settlement/*.java</exclude>
+								<exclude>**/com/selflearning/bookwitharchunit/*.java</exclude>
 							</excludes>
 						</configuration>
 					</plugin>
