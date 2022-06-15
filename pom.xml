@@ -79,9 +79,9 @@
 	<profiles>
 		<profile>
 			<id>arch-tests</id>
-			<modules>
+			<!--<modules>
 				<module>bookwitharchunit</module>
-			</modules>
+			</modules>-->
 			<build>
 				<plugins>
 					<plugin>
@@ -90,7 +90,7 @@
 						<version>${maven-surefire-plugin.version}</version>
 						<configuration>
 							<testFailureIgnore>false</testFailureIgnore>
-							<reportsDirectory>${project.build.directory}/surefire-reports/arch-tests</reportsDirectory>
+							<reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
 							<includes>
 								<include>**/com/selflearning/architecture/*.java</include>
 							</includes>
@@ -104,7 +104,7 @@
 						<artifactId>maven-surefire-report-plugin</artifactId>
 						<version>${maven-surefire-report-plugin.version}</version>
 						<configuration>
-							<reportsDirectories>${project.build.directory}/surefire-reports/arch-tests</reportsDirectories>
+							<reportsDirectories>${project.build.directory}/surefire-reports</reportsDirectories>
 							<outputDirectory>${project.build.directory}/site</outputDirectory>
 						</configuration>
 					</plugin>
